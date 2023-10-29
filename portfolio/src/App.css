@@ -1,0 +1,17 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin:0px;
+  width: 100%;
+  background-color: #121212;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin:0px;
+  width: 95%;
+}

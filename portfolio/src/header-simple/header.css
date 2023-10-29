@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    height: 15vh;
+}
+
+.header-h2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 55%;
+    background: linear-gradient(45deg, #d9ff00, #ff6600, #ff0000); /* Degradado de colores */
+    background-clip: text; /* Aplicar el degradado al texto */
+    -webkit-background-clip: text; /* Para navegadores basados en WebKit */
+    color:transparent;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 0px;
+}

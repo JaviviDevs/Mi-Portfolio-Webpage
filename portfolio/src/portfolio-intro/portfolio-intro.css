@@ -1,0 +1,244 @@
+.intro-information-button:hover{
+    font-size: 1.2rem;
+    transform: scale(1.1);
+}
+
+.intro-img{
+    display: flex;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    border-radius: 100%;
+}
+
+
+
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
+@media (max-width: 768px){
+    /* Estilos específicos para móviles */
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 95%;
+        height: auto;
+        margin-top:2vh;
+        margin-bottom:2vh;
+    }
+
+    .intro-information{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height:auto;
+    }
+
+    .intro-information-h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 8vh;
+        background: linear-gradient(45deg, #eeff00, #ff6600, #ff0000); /* Degradado de colores */
+        background-clip: text; /* Aplicar el degradado al texto */
+        -webkit-background-clip: text; /* Para navegadores basados en WebKit */
+        color:transparent;
+        font-weight: bolder;
+        font-size: 2rem;
+        margin: 0px;
+    }
+    
+    .intro-information-h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 5vh;
+        color:white;
+        font-weight: lighter;
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+
+    .intro-information-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        height: 6vh;
+        background: linear-gradient(45deg, #ffd900, #ff6600, #ff0000); 
+        color:white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        border-radius: 5px;
+        transition:0.2s all ease-in-out;
+    }
+
+    .intro-containerImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        height: 33vh;
+        margin-bottom:2vh;
+        border-radius: 100%;
+    }
+}
+    
+/* Estilos para tablets (ancho máximo de 1024px) */
+@media (max-width: 1024px) and (min-width:769px){
+    /* Estilos específicos para tablets */
+    .intro{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 95%;
+        height: auto;
+        margin-top:2vh;
+        margin-bottom:2vh;
+    }
+
+    .intro-information{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 65%;
+        height:auto;
+    }
+
+    .intro-information-h1{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(45deg, #eeff00, #ff6600, #ff0000); /* Degradado de colores */
+        background-clip: text; /* Aplicar el degradado al texto */
+        -webkit-background-clip: text; /* Para navegadores basados en WebKit */
+        color:transparent;
+        font-weight: bolder;
+        font-size: 3.2rem;
+        margin: 0px;
+    }
+
+    .intro-information-h3{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 7vh;
+        color:white;
+        font-weight: lighter;
+        font-size: 1.7rem;
+        margin: 0px;
+    }
+
+    .intro-information-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 6vh;
+        background: linear-gradient(45deg, #ffd900, #ff6600, #ff0000); 
+        color:white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        border-radius: 5px;
+        transition:0.2s all ease-in-out;
+    }
+
+    .intro-containerImg{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 35%;
+        height: 33vh;
+        margin-bottom:2vh;
+        border-radius: 100%;
+    }
+    
+}
+
+/* Estilos para computadoras de escritorio (ancho mínimo de 1025px) */
+@media (min-width: 1025px) {
+    /* Estilos específicos para escritorio */
+    .intro{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 95%;
+        height: auto;
+        margin-top:2vh;
+        margin-bottom:2vh;
+    }
+
+    .intro-information{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 65%;
+        height:auto;
+    }
+
+    .intro-information-h1{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(45deg, #eeff00, #ff6600, #ff0000); /* Degradado de colores */
+        background-clip: text; /* Aplicar el degradado al texto */
+        -webkit-background-clip: text; /* Para navegadores basados en WebKit */
+        color:transparent;
+        font-weight: bolder;
+        font-size: 4.5rem;
+        margin: 0px;
+    }
+
+    .intro-information-h3{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 7vh;
+        color:white;
+        font-weight: lighter;
+        font-size: 1.8rem;
+        margin: 0px;
+    }
+
+    .intro-information-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 6vh;
+        background: linear-gradient(45deg, #ffd900, #ff6600, #ff0000); 
+        color:white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        border-radius: 5px;
+        transition:0.2s all ease-in-out;
+    }
+
+    .intro-containerImg{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 35%;
+        height: 33vh;
+        margin-bottom:2vh;
+        border-radius: 100%;
+    }
+    
+
+}
+

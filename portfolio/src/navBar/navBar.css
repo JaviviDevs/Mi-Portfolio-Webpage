@@ -1,0 +1,138 @@
+.navBar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 45%;
+    height: auto;
+    transition: 0.2s all ease-in-out;
+}
+
+.navBar-menu-a:hover{
+    color:rgb(255, 72, 0);
+}
+
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
+@media (max-width: 768px){
+    /* Estilos específicos para móviles */
+    .navBar-icon-cross{
+        display: flex;
+        background-image: url(../../img/x.png);
+        background-size: cover;
+        background-position: center;
+        width: 5vh;
+        height: 5vh;
+        transition: background 0.5s ease-in-out; /* Agrega una transición suave */
+        z-index: 101;
+    }
+    
+    .navBar-icon-menu{
+        display: flex;
+        background-image: url(../../img/menu.png);
+        background-size: cover;
+        background-position: center;
+        width: 5vh;
+        height: 5vh;
+    }
+    
+    .navBar-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding-top: 15vh;
+        z-index: 100;
+        
+    }
+    
+    .navBar-menu-hidden{
+        display:none;
+    }
+    
+    .navBar-menu-a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: bolder;
+        color:rgb(255, 255, 255);
+        width: 50%;
+        height:7vh;
+        margin:0.5vh;
+        transition: 0.2s all ease;
+    }
+    
+}
+    
+/* Estilos para tablets (ancho máximo de 1024px) */
+@media (max-width: 1024px) and (min-width:769px){
+    /* Estilos específicos para tablets */
+    .navBar-icon-cross,.navBar-icon-menu{
+        display: none;
+     }
+     
+     .navBar-menu,.navBar-menu-hidden{
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         height: 6vh;
+     }
+     
+     
+     .navBar-menu-a{
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         text-decoration: none;
+         font-size: 0.9rem;
+         font-weight: bolder;
+         color:rgb(255, 255, 255);
+         flex:1;
+         height:100%;
+         margin:0.5vh;
+         transition: 0.2s all ease;
+     }
+    
+}
+
+/* Estilos para computadoras de escritorio (ancho mínimo de 1025px) */
+@media (min-width: 1025px) {
+    /* Estilos específicos para escritorio */
+    .navBar-icon-cross,.navBar-icon-menu{
+       display: none;
+    }
+    
+    .navBar-menu,.navBar-menu-hidden{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 6vh;
+    }
+    
+    
+    .navBar-menu-a{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bolder;
+        color:rgb(255, 255, 255);
+        flex:1;
+        height:100%;
+        margin:0.5vh;
+        transition: 0.2s all ease;
+    }
+
+}
+
