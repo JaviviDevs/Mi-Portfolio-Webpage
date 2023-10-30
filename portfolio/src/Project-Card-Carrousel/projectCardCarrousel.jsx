@@ -4,32 +4,35 @@ import { useState,useEffect} from 'react';
 
 
 export function ProjectCardsCarrousel({cards}) {
+    const [cardsList, setCardList] = useState(cards);
+    let iter = [];
+
+    for (let i = 0; i < cardsList.length; i++) {
+      iter.push(i);
+    }
+
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const iter = windowWidth > 768 ? [0, 1] : [0]; // Vector condicional según el ancho de la ventana
-
-    useEffect(() => {
-        // Función para actualizar el ancho de la ventana cuando cambie el tamaño de la ventana
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-
-        // Agrega un oyente de eventos para el evento 'resize' que se dispara cuando cambia el tamaño de la ventana.
-        window.addEventListener('resize', handleResize);
-
-        // Limpia el oyente de eventos cuando el componente se desmonta.
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-
-    }, []);
-
     const nextSlide = () => {
-      setCurrentIndex((currentIndex) => (currentIndex + 1) % cards.length);
+      if (currentIndex < cardsList.length-1) {//En la ultima iteracion no se ve ningun elemento por eso, ponemos 1 menos
+        setCurrentIndex(currentIndex + 1);
+      } else {
+        // Si estás en el último elemento, vuelve al primero.
+        setCurrentIndex(0);
+      }
     };
   
     const prevSlide = () => {
-      setCurrentIndex((currentIndex) => (currentIndex - 1 + cards.length) % cards.length);
+      if (currentIndex > 0) {
+        setCurrentIndex(currentIndex - 1);
+      } else {
+        // Si estás en el último elemento, vuelve al primero.
+        setCurrentIndex(cardsList.length-1); 
+      }
+    };
+  
+    const cardContainerStyle = {
+      transform: `translateX(-${currentIndex * 225}px)`, 
+      transition: 'transform 0.5s ease',
     };
 
     return (
@@ -38,10 +41,11 @@ export function ProjectCardsCarrousel({cards}) {
         <section className='project-cards-carrousel-container' >
             {iter.map((iter, indx) => (
                 <ProjectCard key={indx} 
-                             link={cards[(currentIndex+iter)%cards.length][0][0]} 
-                             imgProject={cards[(currentIndex+iter)%cards.length][1][0]} 
-                             title={cards[(currentIndex+iter)%cards.length][2][0]} 
-                             technologies={cards[(currentIndex+iter)%cards.length][3]}/>
+                             link={cardsList[(iter)%cards.length][0][0]} 
+                             imgProject={cardsList[(iter)%cards.length][1][0]} 
+                             title={cardsList[(iter)%cards.length][2][0]} 
+                             technologies={cardsList[(iter)%cards.length][3]}
+                             style={cardContainerStyle}/>
             ))}
         </section>
         <button className='project-cards-carrousel-button' onClick={nextSlide}>&gt;</button>

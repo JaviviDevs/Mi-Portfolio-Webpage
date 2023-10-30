@@ -1,10 +1,10 @@
 
 import './projectCard.css'
 
-export function ProjectCard({link,imgProject,title,technologies}) {
+export function ProjectCard({link,imgProject,title,technologies,style}) {
 
     return (
-        <a href={link} className='project-card'>
+        <a href={link} className='project-card' style={style}>
             <section className='project-card-imgContainer'>
                 <img src={`./img/${imgProject}`} className='project-card-img'/>
             </section>

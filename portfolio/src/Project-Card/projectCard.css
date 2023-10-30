@@ -56,6 +56,8 @@
     margin:2%;
 }
 
+
+
 /* Estilos para dispositivos móviles (ancho máximo de 768px) */
 @media (max-width: 768px){
     /* Estilos específicos para móviles */
@@ -64,8 +66,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 80%;
-        height:52vh;
+        min-width:180px;
+        height:300px;
         border-radius: 5%;
         text-decoration: none;
         box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* Box shadow para el efecto de sombra */
@@ -83,8 +85,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 20%;
-        height:48vh;
+        min-width: 180px;
+        height:300px;
         border-radius: 5%;
         text-decoration: none;
         box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* Box shadow para el efecto de sombra */
@@ -102,8 +104,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 20%;
-        height:52vh;
+        min-width: 180px;
+        height:300px;
         border-radius: 5%;
         text-decoration: none;
         box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* Box shadow para el efecto de sombra */

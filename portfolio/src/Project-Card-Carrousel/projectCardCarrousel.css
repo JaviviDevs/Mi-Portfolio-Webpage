@@ -1,11 +1,24 @@
 .project-cards-carrousel{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: auto;
 }
 
+.project-cards-carrousel-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height: 57vh;
+    z-index: 100;
+    padding-left:1vw;
+    padding-right:1vw;
+    gap:35px;
+    overflow: hidden;
+
+}
 
 .project-cards-carrousel-button:hover{
     box-shadow: 0px 0px 15px rgb(255, 133, 62); /* Box shadow para el efecto de sombra */
@@ -15,13 +28,6 @@
 /* Estilos para dispositivos móviles (ancho máximo de 768px) */
 @media (max-width: 768px){
     /* Estilos específicos para móviles */
-    .project-cards-carrousel-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        height:57vh;
-    }
 
     .project-cards-carrousel-button{
         display: flex;
@@ -36,7 +42,7 @@
         background-color: transparent;
         transition: 0.2 all ease;
         border:1px solid rgb(219, 62, 0);
-        
+        z-index: 101;
     
     }
     
@@ -45,14 +51,6 @@
 /* Estilos para tablets (ancho máximo de 1024px) */
 @media (max-width: 1024px) and (min-width:769px){
     /* Estilos específicos para tablets */
-    .project-cards-carrousel-container{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: 90%;
-        height: 53vh;
-        gap:3vw;
-    }
     
     .project-cards-carrousel-button{
         display: flex;
@@ -67,7 +65,7 @@
         background-color: transparent;
         transition: 0.2 all ease;
         border:1px solid rgb(219, 62, 0);
-        
+        z-index: 101;
     
     }
 }
@@ -75,14 +73,6 @@
 /* Estilos para computadoras de escritorio (ancho mínimo de 1025px) */
 @media (min-width: 1025px) {
     /* Estilos específicos para escritorio */
-    .project-cards-carrousel-container{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: 85%;
-        height: 57vh;
-        gap:3vw;
-    }
 
     .project-cards-carrousel-button{
         display: flex;
@@ -97,5 +87,6 @@
         background-color: transparent;
         transition: 0.2 all ease;
         border:1px solid rgb(219, 62, 0);
+        z-index: 101;
     }
 }
