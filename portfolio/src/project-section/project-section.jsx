@@ -6,9 +6,8 @@ import './project-section.css'
 export function ProjectSection({title,projectCards}) {
   
   return (
-    <article className='projects'>
+    <article className='projects' id='Projects'>
         <h3 className='projects-h3'>{title}</h3>
-        <div className='orangeborder'></div>
         < ProjectCardsCarrousel cards={projectCards}/>
     </article>
     

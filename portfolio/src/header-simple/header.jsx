@@ -7,7 +7,7 @@ export function Header({name}) {
   const listLinks=[
                     ['#AboutMe','Sobre mi'],
                     ['#Projects','Proyectos'],
-                    ['#Experience','Experiencia'],
+                    ['#Skills','Skills'],
                     ['#Education','Formación']
                   ];
 

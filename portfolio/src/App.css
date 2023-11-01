@@ -11,7 +11,29 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin:0px;
+  width: 100%;
+  
+}
+
+.margin-flexbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   margin:0px;
   width: 95%;
+  margin-bottom:5vh;
+}
+
+.flexbox-blue{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0px;
+  width: 100%;
+  background: #205c5b;
+  margin-top:2vh;
 }

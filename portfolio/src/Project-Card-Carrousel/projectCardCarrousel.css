@@ -12,12 +12,10 @@
     align-items: center;
     width: 80%;
     height: 57vh;
-    z-index: 100;
     padding-left:1vw;
     padding-right:1vw;
     gap:35px;
     overflow: hidden;
-
 }
 
 .project-cards-carrousel-button:hover{
@@ -42,8 +40,6 @@
         background-color: transparent;
         transition: 0.2 all ease;
         border:1px solid rgb(219, 62, 0);
-        z-index: 101;
-    
     }
     
 }
@@ -65,8 +61,6 @@
         background-color: transparent;
         transition: 0.2 all ease;
         border:1px solid rgb(219, 62, 0);
-        z-index: 101;
-    
     }
 }
 
@@ -87,6 +81,5 @@
         background-color: transparent;
         transition: 0.2 all ease;
         border:1px solid rgb(219, 62, 0);
-        z-index: 101;
     }
 }

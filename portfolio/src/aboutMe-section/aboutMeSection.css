@@ -1,0 +1,145 @@
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 95%;
+    height: auto;
+}
+
+.about-me-img{
+    display: flex;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px ;
+}
+
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
+@media (max-width: 768px){
+    /* Estilos específicos para móviles */
+    .about-me-h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+        font-size: 2rem;
+        color:white;
+        border-bottom: 2px solid rgb(255, 81, 0);
+    }
+
+    .about-me-content{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items:center;
+        width: 100%;
+        height: auto;
+    }
+    
+    .about-me-p{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 95%;
+        height: auto;
+        font-size: 1.3rem;
+        color:white;
+        padding-top: 2vh;
+    }
+    
+    .about-me-imgContainer{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 95%;
+        height: 50vh;
+    }
+
+}
+    
+/* Estilos para tablets (ancho máximo de 1024px) */
+@media (max-width: 1024px) and (min-width:769px){
+    /* Estilos específicos para tablets */
+    .about-me-h3{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 75%;
+        height: 10vh;
+        font-size: 2rem;
+        color:white;
+        border-bottom: 2px solid rgb(255, 81, 0);
+    }
+
+    .about-me-content{
+        display: flex;
+        justify-content: flex-start;
+        align-items:space-between;
+        width: 100%;
+        height: auto;
+    }
+    
+    .about-me-p{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 65%;
+        height: auto;
+        font-size: 1.3rem;
+        color:white;
+    }
+    
+    .about-me-imgContainer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 35%;
+        height: 30vh;
+    }
+
+}
+
+/* Estilos para computadoras de escritorio (ancho mínimo de 1025px) */
+@media (min-width: 1025px) {
+    /* Estilos específicos para escritorio */
+    .about-me-h3{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 60%;
+        height: 10vh;
+        font-size: 2rem;
+        color:white;
+        border-bottom: 2px solid rgb(255, 81, 0);
+    }
+
+    .about-me-content{
+        display: flex;
+        justify-content: flex-start;
+        align-items:space-between;
+        width: 100%;
+        height: auto;
+    }
+    
+    .about-me-p{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 65%;
+        height: auto;
+        font-size: 1.3rem;
+        color:white;
+    }
+    
+    .about-me-imgContainer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 35%;
+        height: 30vh;
+    }
+    
+}

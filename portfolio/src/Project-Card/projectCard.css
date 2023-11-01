@@ -1,6 +1,5 @@
 .project-card:hover{
-    border-right: 2px solid rgb(255, 81, 0);
-    box-shadow: 0px 0px 20px rgb(255, 81, 0); /* Box shadow para el efecto de sombra */
+    box-shadow: 0px 0px 15px rgb(255, 133, 62); /* Box shadow para el efecto de sombra */
     transform: scale(1.05);
 }
 
@@ -73,6 +72,7 @@
         box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* Box shadow para el efecto de sombra */
         padding: 5px; /* Espacio interior de la tarjeta */
         transition: 0.2s all ease;
+        background-color: #1f1f1f;
     }
     
 }
@@ -92,6 +92,7 @@
         box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* Box shadow para el efecto de sombra */
         padding: 5px; /* Espacio interior de la tarjeta */
         transition: 0.2s all ease;
+        background-color: #1f1f1f;
     }
     
 }
@@ -111,5 +112,6 @@
         box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* Box shadow para el efecto de sombra */
         padding: 5px; /* Espacio interior de la tarjeta */
         transition: 0.2s all ease;
+        background-color: #1f1f1f;
     }
 }
