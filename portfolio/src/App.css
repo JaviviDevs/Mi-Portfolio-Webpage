@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   display: flex;
   justify-content: center;
@@ -34,6 +38,6 @@ body{
   align-items: center;
   margin:0px;
   width: 100%;
-  background: #205c5b;
+  background: #004b49;
   margin-top:2vh;
 }

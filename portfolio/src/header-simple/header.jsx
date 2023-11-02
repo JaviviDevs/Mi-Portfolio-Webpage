@@ -8,7 +8,8 @@ export function Header({name}) {
                     ['#AboutMe','Sobre mi'],
                     ['#Projects','Proyectos'],
                     ['#Skills','Skills'],
-                    ['#Education','Formación']
+                    ['#Education','Formación'],
+                    ['#ContactMe','Contacto']
                   ];
 
   return (

@@ -5,6 +5,7 @@ import { AboutMeSection } from './aboutMe-section/aboutMeSection';
 import { ProjectSection } from './project-section/project-section.jsx';
 import { EducationSection } from './education-section/educationSection.jsx';
 import { SkillsSection } from './skills-section/skillsSection';
+import { FooterSection } from './footer-section/footerSection.jsx';
 import './App.css'
 
 
@@ -28,16 +29,12 @@ export function App() {
   ];
 
   const projectCards=[
-    [['TFG'],['BlackTheme.png'],['OpenCV and Python application for automotive spotlight image processing'],['python.png','openCV.png','qt.png','arduino.png']],
-    [['cARds'],['cARds.png'],['cARds'],['python.png','openCV.png']],
-    [['cARds'],['cARds.png'],['cARds2'],['python.png','openCV.png']],
-    [['cARds'],['cARds.png'],['cARds3'],['python.png','openCV.png']],
-    [['cARds'],['cARds.png'],['cARds4'],['python.png','openCV.png']],
-    [['cARds'],['cARds.png'],['cARds5'],['python.png','openCV.png']],
-    [['cARds'],['cARds.png'],['cARds6'],['python.png','openCV.png']],
-    [['cARds'],['cARds.png'],['cARds7'],['python.png','openCV.png']]
-    
-   
+    [['TFG'],['Valeo.png'],['Application for automotive spotlight image processing'],['python.png','openCV.png','qt.png','arduino.png']],
+    [['cARds'],['cARds.png'],['cARds Game'],['python.png','openCV.png']],
+    [['./'],['comingsoon.png'],['Proximamente'],['question.png']],
+    [['./'],['comingsoon.png'],['Proximamente'],['question.png']],
+    [['./'],['comingsoon.png'],['Proximamente'],['question.png']],
+    [['./'],['comingsoon.png'],['Proximamente'],['question.png']]
   ];
 
   const technologies=['python.png','c++.png','java.png','openCV.png','Qt.png','html.png','css.png','javaScript.png','php.png','sql.png','react.png','git.png','github.png'];
@@ -45,6 +42,12 @@ export function App() {
   const titleSkills='Skills';
   const subtitleSkills='Habilidades';
   const subtitlePLanguages='Lenguajes de programación, librerias y otras tecnologías';
+
+  const footerLinks=[
+    ['mailto:javierexmar@gmail.com?subject=consulta','email.png','javierexmar@gmail.com'],
+    ['https://github.com/JaviviDevs','github.png','JaviviDevs'],
+    ['https://www.linkedin.com/in/javier-exp%C3%B3sito-mart%C3%ADnez/','linkedin.png','']
+  ];
 
   return (
     <>
@@ -61,6 +64,11 @@ export function App() {
       <section className='margin-flexbox'>
         <EducationSection title={titleEducationSection} subtitle={subtitleEducationSection} FormationCards={FormationCards}/>
         <SkillsSection technologies={technologies} habilidades={habilidades} title={titleSkills} subtitleSkills={subtitleSkills} subtitlePLanguages={subtitlePLanguages}/>
+      </section>
+      <section className='flexbox-blue'>
+        <section className='margin-flexbox'>
+          <FooterSection links={footerLinks}/>
+        </section>
       </section>
     </>
   )
