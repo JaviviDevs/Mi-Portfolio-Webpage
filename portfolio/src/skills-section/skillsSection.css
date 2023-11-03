@@ -8,16 +8,6 @@
 }
 
 
-.skills-wrapBox{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    width: 95%;
-    height: auto;
-    gap:30px;
-}
-
 .skills-tecnologies-imgContainer{
     display: flex;
     align-items: center;
@@ -76,9 +66,20 @@
 /* Estilos para dispositivos móviles (ancho máximo de 768px) */
 @media (max-width: 768px){
     /* Estilos específicos para móviles */
+
+    .skills-wrapBox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        height: auto;
+        gap:30px;
+    }
+
     .skills-h3{
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         width: 100%;
         height: 20vh;
@@ -89,7 +90,7 @@
 
     .skills-h4{
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         width: 100%;
         height: auto;
@@ -123,6 +124,15 @@
         color:white;
     }
 
+    .skills-wrapBox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 95%;
+        height: auto;
+        gap:30px;
+    }
 
 }
 
@@ -150,5 +160,14 @@
         color:white;
     }
     
+    .skills-wrapBox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 95%;
+        height: auto;
+        gap:30px;
+    }
     
 }
