@@ -29,7 +29,7 @@ export function App() {
   ];
 
   const projectCards=[
-    [['TFG'],['Valeo.png'],['Application for automotive spotlight image processing'],['python.png','openCV.png','qt.png','arduino.png']],
+    [['TFG'],['Valeo.png'],['Application for automotive spotlight image processing'],['python.png','openCV.png','Qt.png','arduino.png']],
     [['cARds'],['cARds.png'],['cARds Game'],['python.png','openCV.png']],
     [['./'],['comingsoon.png'],['Proximamente'],['question.png']],
     [['./'],['comingsoon.png'],['Proximamente'],['question.png']],
