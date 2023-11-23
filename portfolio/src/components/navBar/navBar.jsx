@@ -1,7 +1,7 @@
-
-import './navBar.css'
+import {PropTypes} from 'prop-types';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
-
+import './navBar.css'
 export function NavBar({ links }) {
 
     const [isMenuActive, setMenuActive] = useState(false);
@@ -22,7 +22,7 @@ export function NavBar({ links }) {
             </section>
             <section className={navBarMenuClass} onClick={openCloseMenu}>
                 {links.map((link, indx) => (
-                    <a key={indx} href={link[0]} className='navBar-menu-a'>{link[1]}</a>
+                    <a to={link.url} key={indx} className='navBar-menu-a'>{link.text}</a>
                 ))}
             </section>
         </article>
@@ -30,3 +30,11 @@ export function NavBar({ links }) {
 }
 
 
+NavBar.propTypes = {
+    links: PropTypes.arrayOf(
+      PropTypes.shape({
+        url: PropTypes.string.isRequired,
+        text: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+  };

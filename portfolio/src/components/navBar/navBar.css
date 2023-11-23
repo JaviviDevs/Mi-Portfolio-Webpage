@@ -2,13 +2,14 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 45%;
+    width: 60%;
     height: auto;
     transition: 0.2s all ease-in-out;
 }
 
 .navBar-menu-a:hover{
-    color:rgb(255, 72, 0);
+    color:#FF6362;
+    border-bottom: 2px solid #FF6362;
 }
 
 /* Estilos para dispositivos móviles (ancho máximo de 768px) */
@@ -44,7 +45,7 @@
         left:0;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(255, 255, 255, 0.3);
         padding-top: 15vh;
         z-index: 100;
         
@@ -61,11 +62,12 @@
         text-decoration: none;
         font-size: 1.3rem;
         font-weight: bolder;
-        color:rgb(255, 255, 255);
+        color:black;
         width: 50%;
         height:7vh;
         margin:0.5vh;
         transition: 0.2s all ease;
+        border-bottom: 2px solid transparent;
     }
     
 }
@@ -94,11 +96,12 @@
          text-decoration: none;
          font-size: 0.9rem;
          font-weight: bolder;
-         color:rgb(255, 255, 255);
+         color:black;
          flex:1;
          height:100%;
          margin:0.5vh;
          transition: 0.2s all ease;
+         border-bottom: 2px solid transparent;
      }
     
 }
@@ -127,11 +130,12 @@
         text-decoration: none;
         font-size: 1rem;
         font-weight: bolder;
-        color:rgb(255, 255, 255);
+        color:black;
         flex:1;
         height:100%;
         margin:0.5vh;
         transition: 0.2s all ease;
+        border-bottom: 2px solid transparent;
     }
 
 }

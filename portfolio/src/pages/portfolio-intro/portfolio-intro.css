@@ -1,0 +1,97 @@
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.intro-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 95%;
+    height: auto;
+    margin-top:10vh;
+    margin-bottom: 5vh;
+}
+
+
+.intro-containerImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 35vw;
+    border-radius:23% 77% 17% 83% / 86% 30% 70% 14%;
+    background-color: #FF6362;
+}
+
+.intro-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.intro-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 35%;
+    height:auto;
+}
+.intro-information-h3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: auto;
+}
+
+.intro-information-h1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: auto;
+}
+
+.intro-information-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    background-color: #FF6362;
+    padding:1.5vh 1vw 1.5vh 1vw;
+    border-radius: 5px;
+    color:black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
+@media (max-width: 768px){
+    /* Estilos específicos para móviles */
+   
+}
+    
+/* Estilos para tablets (ancho máximo de 1024px) */
+@media (max-width: 1024px) and (min-width:769px){
+    /* Estilos específicos para tablets */
+
+    
+}
+
+/* Estilos para computadoras de escritorio (ancho mínimo de 1025px) */
+@media (min-width: 1025px) {
+    /* Estilos específicos para escritorio */ 
+
+}
+

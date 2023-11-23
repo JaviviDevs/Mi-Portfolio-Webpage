@@ -1,5 +1,5 @@
 import React from 'react';
-import {ProjectCardsCarrousel} from '../Project-Card-Carrousel/projectCardCarrousel.jsx'
+import {ProjectCardsCarrousel} from '../components/Project-Card-Carrousel/projectCardCarrousel.jsx'
 import './project-section.css'
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { LeftCircleCard } from '../left-circle-card/leftCircleCard';
+import { LeftCircleCard } from '../../components/left-circle-card/leftCircleCard';
 import './educationSection.css'
 
 
