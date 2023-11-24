@@ -1,9 +1,53 @@
-.header{
+.header,.hidden-header{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     width: 95%;
     height: 15vh;
+    z-index:1;
+    border-radius: 0px 0px 10px 10px;
+    position:sticky;
+    top:0;
+}
+
+.header{
+    align-items: center;
+}
+
+.hidden-header{
+    align-items: flex-start;
+    background-color: transparent;
+}
+
+.header .bar-header,.hidden-header .bar-header:hover{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition:0.2s all ease-in-out;
+}
+
+.hidden-header .bar-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 2vh;
+    background-color: #FF6362; 
+    border-radius: 0px 0px 10px 10px;
+    transition:0.2s all ease-in-out;
+    border-left:2px solid white;
+    border-right:2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.hidden-header .bar-header .header-h2,.hidden-header .bar-header .navBar{
+    display:none;
+}
+
+.hidden-header .bar-header:hover .header-h2,.hidden-header .bar-header:hover .navBar{
+    display:flex;
 }
 
 .header-h2{
@@ -12,9 +56,9 @@
     align-items: center;
     width: auto;
     max-width: 30%;
-    background: #FF6362; /* Degradado de colores */
-    background-clip: text; /* Aplicar el degradado al texto */
-    -webkit-background-clip: text; /* Para navegadores basados en WebKit */
+    background: #FF6362; 
+    background-clip: text; 
+    -webkit-background-clip: text;
     color:transparent;
     font-weight: bolder;
     font-size: 2rem;

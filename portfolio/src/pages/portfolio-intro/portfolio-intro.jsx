@@ -1,21 +1,25 @@
 import {PropTypes} from 'prop-types';
+import { Link } from 'react-router-dom';
 import { BannerCarousel } from '../../components/Banner-Carousel-leftscroll/bannerCarousel';
 import './portfolio-intro.css'
 
-export function PortfolioIntro({img,subtitle,title,buttonContact,banners}) {
+export function PortfolioIntro({img,pretitle,subtitle,title,button,banners}) {
 
   return (
     <article className='intro'>
       <BannerCarousel banners={banners}/>
       <section className='intro-content'>
         <section className='intro-information'>
-          <h3 className='intro-information-h3'>{subtitle}</h3>
+        <p className='intro-information-p-pretitle'>{pretitle}</p>
           <h1 className='intro-information-h1'>{title}</h1>
-          <a className='intro-information-button' href={buttonContact[0].url}>{buttonContact[0].text}</a>
+          <p className='intro-information-p-subtitle'>{subtitle}</p>
+          <Link to={button[0].url}  className='intro-information-button'> {button[0].text} </Link>
         </section>
         
-        <section className='intro-containerImg'>
-          <img src={`./img/${img}`} className='intro-img'/>
+        <section className='intro-containerImg-dark'>
+          <section className='intro-containerImg'>
+            <img src={`./img/${img}`} className='intro-img'/>
+          </section>
         </section>
       </section>
     </article> 
@@ -25,9 +29,10 @@ export function PortfolioIntro({img,subtitle,title,buttonContact,banners}) {
 
 PortfolioIntro.propTypes = {
   img: PropTypes.string.isRequired,
+  pretitle: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   title:PropTypes.string.isRequired,
-  buttonContact: PropTypes.arrayOf(
+  button: PropTypes.arrayOf(
     PropTypes.shape({
       url: PropTypes.string.isRequired,
       text: PropTypes.string.isRequired,

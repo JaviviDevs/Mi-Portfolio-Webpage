@@ -1,43 +1,43 @@
-html{
-  scroll-behavior: smooth;
-}
-
-body{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin:0px;
-  width: 100%;
-  background-color: rgb(253, 253, 253)
-}
-
-#root{
-  display: flex;
+body,#root,div{
+  display:flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin:0px;
   width: 100%;
+  height:auto;
+  margin:0px;
+}
+
+.app{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height:auto;
   font-family: Arial, sans-serif;
+  background-color: rgb(253, 253, 253);
+  position:relative;
 }
 
-.margin-flexbox{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin:0px;
-  width: 95%;
-  margin-bottom:5vh;
+
+/* Estilos para la transición de entrada */
+.fade-enter {
+  opacity: 0.01;
 }
 
-.flexbox-blue{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin:0px;
-  width: 100%;
-  background: #004b49;
-  margin-top:2vh;
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
 }
+
+/* Estilos para la transición de salida */
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-out;
+}
+

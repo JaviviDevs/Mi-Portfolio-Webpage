@@ -22,7 +22,7 @@ export function NavBar({ links }) {
             </section>
             <section className={navBarMenuClass} onClick={openCloseMenu}>
                 {links.map((link, indx) => (
-                    <a to={link.url} key={indx} className='navBar-menu-a'>{link.text}</a>
+                    <Link to={link.url} key={indx} className='navBar-menu-a'>{link.text}</Link>
                 ))}
             </section>
         </article>
