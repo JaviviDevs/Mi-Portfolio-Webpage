@@ -56,8 +56,8 @@ export function App() {
 
   const titleProjectSection='Projects';
   const projectsCards=[
-    {url:'/TFG',urlImage:'Valeo.png',name:'Application for automotive spotlight image processing'},
-    {url:'/Cards',urlImage:'cARds.png',name:'cARds game'},
+    {url:'/Projects/TFG/',urlImage:'Valeo.png',name:'Application for automotive spotlight image processing'},
+    {url:'/Projects/Cards/',urlImage:'cARds.png',name:'cARds game'},
     {url:'/Projects',urlImage:'comingsoon.png',name:'Coming soon'},
     {url:'/Projects',urlImage:'comingsoon.png',name:'Coming soon'},
     {url:'/Projects',urlImage:'comingsoon.png',name:'Coming soon'},
@@ -115,13 +115,22 @@ export function App() {
                 </CSSTransition>
             </TransitionGroup>
             } />
-            <Route path='/Projects' element={
+            <Route path='/Projects/' element={
             <TransitionGroup >
                 <CSSTransition key={'/Projects'} timeout={500} classNames='fade' >
                   <ProjectSection title={titleProjectSection} projectsCards={projectsCards} />
                 </CSSTransition>
             </TransitionGroup>
             } />
+
+            <Route path='/Projects/:nombreProyecto' element={
+            <TransitionGroup >
+                <CSSTransition key={'/Projects'} timeout={500} classNames='fade' >
+                  <ProjectSection title={titleProjectSection} projectsCards={projectsCards} />
+                </CSSTransition>
+            </TransitionGroup>
+            } />
+
             <Route path='/Skills' element={
             <TransitionGroup >
                 <CSSTransition key={'/Skills'} timeout={500} classNames='fade' >

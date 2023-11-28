@@ -1,0 +1,72 @@
+.grid-instagram-resizeContainer{
+    display:flex;
+    grid-column: span 1;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    transition:0.2s all ease;
+}
+.grid-instagram-resizeContainer:hover{
+    opacity: 75%;
+    transform: scale(1.01);
+}
+.grid-instagram-img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
+@media (max-width: 768px){
+    /* Estilos específicos para móviles */
+    .grid-instagram{
+        display:grid;
+        margin-top:10vh;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2,150px);
+        grid-auto-rows:150px;
+        width: 95%;
+        height:auto;
+        gap:5px;
+        margin-bottom: 10vh;
+    }
+    
+}
+    
+/* Estilos para tablets (ancho máximo de 1024px) */
+@media (max-width: 1024px) and (min-width:769px){
+    /* Estilos específicos para tablets */
+    .grid-instagram{
+        display:grid;
+        margin-top:10vh;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3,200px);
+        grid-auto-rows:200px;
+        width: 95%;
+        height:auto;
+        gap:5px; 
+        margin-bottom: 10vh;
+    }
+    
+}
+
+/* Estilos para computadoras de escritorio (ancho mínimo de 1025px) */
+@media (min-width: 1025px) {
+    /* Estilos específicos para escritorio */
+    .grid-instagram{
+        display:grid;
+        margin-top:10vh;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3,300px);
+        grid-auto-rows:300px;
+        width: 95%;
+        height:auto;
+        gap:5px;
+        margin-bottom: 10vh;
+    }
+
+}

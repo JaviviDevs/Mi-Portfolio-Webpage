@@ -6,6 +6,7 @@
     width: 100%;
     height: auto;
     overflow:hidden;
+    z-index: 0;
 }
 
 /* Estilos para dispositivos móviles (ancho máximo de 768px) */
